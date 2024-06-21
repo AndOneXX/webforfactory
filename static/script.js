@@ -1,7 +1,7 @@
 document.getElementById('submitButton').addEventListener('click', function() {
     const selectedValue = document.getElementById('dropdown').value;
     // Запрос к серверу по адресу /update-file
-    fetch('/localhost:5000/C:/Codes/webforfactory/index.html', {
+    fetch('/update-file', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

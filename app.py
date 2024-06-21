@@ -1,9 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, render_template, jsonify
 import os
 
 app = Flask(__name__)
 
-@app.route('/localhost:5000/C:/Codes/webforfactory/index.html', methods=['POST'])
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/update-file', methods=['POST'])
 def update_file():
     data = request.json
     selected_value = data.get('value')
