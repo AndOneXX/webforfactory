@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/localhost:5000', methods=['POST'])
+@app.route('/localhost:5000/C:/Codes/webforfactory/index.html', methods=['POST'])
 def update_file():
     data = request.json
     selected_value = data.get('value')
