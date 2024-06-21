@@ -14,8 +14,8 @@ def update_file():
     
     if selected_value:
         try:
-            with open('selected_value.txt', 'w') as file:
-                file.write(selected_value)
+            with open('selected_value.txt', 'a') as file:
+                file.write(selected_value + '\n')
             return jsonify({'message': 'Файл обновлен удачно'}), 200
         except Exception as e:
             return jsonify({'error': str(e)}), 500

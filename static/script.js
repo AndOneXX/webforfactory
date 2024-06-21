@@ -1,5 +1,7 @@
 document.getElementById('submitButton').addEventListener('click', function() {
     const selectedValue = document.getElementById('dropdown').value;
+
+    
     // Запрос к серверу по адресу /update-file
     fetch('/update-file', {
         method: 'POST',
