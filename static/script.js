@@ -18,7 +18,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
         // Отображение сообщения пользователю
         const messageDiv = document.getElementById('message');
         messageDiv.style.display = 'block';
-        messageDiv.textContent = 'Отправка успешна!';
+        messageDiv.textContent = 'Успешно отправлено!';
     })
     .catch((error) => {
         console.error('Error:', error);
@@ -26,6 +26,6 @@ document.getElementById('submitButton').addEventListener('click', function() {
         // Отображение сообщения об ошибке
         const messageDiv = document.getElementById('message');
         messageDiv.style.display = 'block';
-        messageDiv.textContent = 'Произошла ошибка при отправке данных.';
+        messageDiv.textContent = 'Произошла ошибка при отправке данных. Перезагрузите страницу.';
     });
 });
